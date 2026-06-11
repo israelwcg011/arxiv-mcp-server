@@ -25,46 +25,6 @@ Built with [FastMCP](https://github.com/jlowin/fastmcp) and [httpx](https://www.
 
 ---
 
-## Live Demo
-
-A deployed instance is running on Fly.io:
-
-```
-https://arxiv-mcp-server.fly.dev/sse
-```
-
-This is a public, read-only MCP server (it only queries the arXiv API — no writes, no authentication required).
-
-### Test it with MCP Inspector
-
-```bash
-npx @modelcontextprotocol/inspector --transport sse --server-url https://arxiv-mcp-server.fly.dev/sse
-```
-
-This opens a browser-based UI where you can:
-- Browse the available tools and their schemas
-- Call tools manually with custom arguments
-- Inspect the `docs://arxiv/api` resource
-- View raw JSON-RPC messages
-
-### Connect it to Claude Desktop
-
-Add to your `claude_desktop_config.json`:
-
-```json
-{
-  "mcpServers": {
-    "arxiv": {
-      "url": "https://arxiv-mcp-server.fly.dev/sse"
-    }
-  }
-}
-```
-
-Restart Claude Desktop. You should see `search_papers`, `get_paper`, `get_paper_pdf_url`, and `create_bibtex_list_from_arxiv_ids` available as tools.
-
----
-
 ## Running Locally
 
 ### 1. Clone the repo
@@ -100,12 +60,87 @@ If you prefer **stdio** transport (used by Claude Desktop's local-process config
 
 ```python
 if __name__ == "__main__":
-    # ngrok / cloud run
+    # cloud / remote run
     # mcp.run(transport="sse", host="0.0.0.0", port=port)
 
     # local run
     mcp.run(transport="stdio")
 ```
+
+### 4. Test locally with MCP Inspector
+
+For SSE:
+
+```bash
+npx @modelcontextprotocol/inspector --transport sse --server-url http://localhost:8080/sse
+```
+
+For stdio:
+
+```bash
+npx @modelcontextprotocol/inspector python server.py
+```
+
+### 5. Connect it to Claude Desktop (local)
+
+Add to your `claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "arxiv": {
+      "command": "/absolute/path/to/venv/bin/python",
+      "args": ["/absolute/path/to/server.py"]
+    }
+  }
+}
+```
+
+Restart Claude Desktop. You should see `search_papers`, `get_paper`, `get_paper_pdf_url`, and `create_bibtex_list_from_arxiv_ids` available as tools.
+
+---
+
+## Example Queries
+
+**Search for recent papers on a topic:**
+
+```
+search_papers(query="all:\"large language models\"", sort_by="submittedDate", sort_order="descending", max_results=10)
+```
+
+**Field-specific search with boolean operators:**
+
+```
+search_papers(query="au:Hinton AND cat:cs.LG")
+```
+
+**Get metadata for a specific paper:**
+
+```
+get_paper(arxiv_id="1706.03762")
+```
+
+**Generate BibTeX for multiple papers:**
+
+```
+create_bibtex_list_from_arxiv_ids(arxiv_ids=["1706.03762", "1502.03167"])
+```
+
+The `docs://arxiv/api` resource contains the full query syntax reference (field prefixes, boolean operators, date filters, subject category codes) so an LLM can construct advanced queries without external documentation.
+
+---
+
+## Deployment
+
+This server was containerized with Docker and deployed on [Fly.io](https://fly.io) using:
+
+```bash
+fly launch
+fly deploy
+```
+
+`server.py` reads the port from the `PORT` environment variable (Fly.io sets this dynamically) and supports `transport="sse"`, `host="0.0.0.0"` for remote/cloud deployment. The `Dockerfile` and `fly.toml` are included in the repo as a reference for anyone wanting to deploy their own instance.
+
 ---
 
 ## Notes
