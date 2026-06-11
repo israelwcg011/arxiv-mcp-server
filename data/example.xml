@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/"
+    xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+    <id>https://arxiv.org/api/26tCJWs4HJ0tURUfSjAz/t6wOnE</id>
+    <title>arXiv Query: search_query=all:large OR all:language OR all:models AND
+        submittedDate:"202404300000 TO 202405300000"&amp;id_list=&amp;start=0&amp;max_results=10</title>
+    <updated>2026-05-30T20:30:00Z</updated>
+    <link
+        href="https://arxiv.org/api/query?search_query=all:large+OR+(all:language+OR+(all:models+AND+submittedDate:%22202404300000+TO+202405300000%22))&amp;start=0&amp;max_results=10&amp;id_list="
+        type="application/atom+xml" />
+    <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+    <opensearch:totalResults>642158</opensearch:totalResults>
+    <opensearch:startIndex>0</opensearch:startIndex>
+
+    <entry>
+        <id>http://arxiv.org/abs/2405.11357v3</id>
+        <title>Large Language Models Lack Understanding of Character Composition of Words</title>
+        <updated>2024-07-23T14:39:06Z</updated>
+        <link href="https://arxiv.org/abs/2405.11357v3" rel="alternate" type="text/html" />
+        <link href="https://arxiv.org/pdf/2405.11357v3" rel="related" type="application/pdf"
+            title="pdf" />
+        <summary>Large language models (LLMs) have demonstrated remarkable performances on a wide
+            range of natural language tasks. Yet, LLMs' successes have been largely restricted to
+            tasks concerning words, sentences, or documents, and it remains questionable how much
+            they understand the minimal units of text, namely characters. In this paper, we examine
+            contemporary LLMs regarding their ability to understand character composition of words,
+            and show that most of them fail to reliably carry out even the simple tasks that can be
+            handled by humans with perfection. We analyze their behaviors with comparison to token
+            level performances, and discuss the potential directions for future research.</summary>
+        <category term="cs.CL" scheme="http://arxiv.org/schemas/atom" />
+        <published>2024-05-18T18:08:58Z</published>
+        <arxiv:comment>ICML 2024 Workshop on Large Language Models and Cognition</arxiv:comment>
+        <arxiv:primary_category term="cs.CL" />
+        <author>
+            <name>Andrew Shin</name>
+        </author>
+        <author>
+            <name>Kunitake Kaneko</name>
+        </author>
+    </entry>
+
+    <entry>
+        <id>http://arxiv.org/abs/2405.13828v2</id>
+        <title>Babysit A Language Model From Scratch: Interactive Language Learning by Trials and
+            Demonstrations</title>
+        <updated>2025-04-18T16:06:57Z</updated>
+        <link href="https://arxiv.org/abs/2405.13828v2" rel="alternate" type="text/html" />
+        <link href="https://arxiv.org/pdf/2405.13828v2" rel="related" type="application/pdf"
+            title="pdf" />
+        <summary>Humans are efficient language learners and inherently social creatures. Our
+            language development is largely shaped by our social interactions, for example, the
+            demonstration and feedback from caregivers. Contrary to human language learning, recent
+            advancements in large language models have primarily adopted a non-interactive training
+            paradigm, and refined pre-trained models through feedback afterward. In this work, we
+            explore how corrective feedback from interactions influences neural language acquisition
+            from scratch through systematically controlled experiments, assessing whether it
+            contributes to word learning efficiency in language models. We introduce a
+            trial-and-demonstration (TnD) learning framework that incorporates three distinct
+            components: student trials, teacher demonstrations, and a reward conditioned on language
+            competence at various developmental stages. Our experiments reveal that the TnD approach
+            accelerates word acquisition for student models of equal and smaller numbers of
+            parameters, and we highlight the significance of both trials and demonstrations. We
+            further show that the teacher's choices of words influence students' word-specific
+            learning efficiency, and a practice-makes-perfect effect is evident by a strong
+            correlation between the frequency of words in trials and their respective learning
+            curves. Our findings suggest that interactive language learning, with teacher
+            demonstrations and active trials, can facilitate efficient word learning in language
+            models.</summary>
+        <category term="cs.CL" scheme="http://arxiv.org/schemas/atom" />
+        <category term="cs.AI" scheme="http://arxiv.org/schemas/atom" />
+        <published>2024-05-22T16:57:02Z</published>
+        <arxiv:comment>NAACL 2025 (Main) &amp; Workshop on Large Language Models and Cognition @
+            ICML 2024 (Oral)</arxiv:comment>
+        <arxiv:primary_category term="cs.CL" />
+        <author>
+            <name>Ziqiao Ma</name>
+        </author>
+        <author>
+            <name>Zekun Wang</name>
+        </author>
+        <author>
+            <name>Joyce Chai</name>
+        </author>
+    </entry>
+
+    <entry>
+        <id>http://arxiv.org/abs/2312.05434v1</id>
+        <title>Beneath the Surface: Unveiling Harmful Memes with Multimodal Reasoning Distilled from
+            Large Language Models</title>
+        <updated>2023-12-09T01:59:11Z</updated>
+        <link href="https://arxiv.org/abs/2312.05434v1" rel="alternate" type="text/html" />
+        <link href="https://arxiv.org/pdf/2312.05434v1" rel="related" type="application/pdf"
+            title="pdf" />
+        <summary>The age of social media is rife with memes. Understanding and detecting harmful
+            memes pose a significant challenge due to their implicit meaning that is not explicitly
+            conveyed through the surface text and image. However, existing harmful meme detection
+            approaches only recognize superficial harm-indicative signals in an end-to-end
+            classification manner but ignore in-depth cognition of the meme text and image. In this
+            paper, we attempt to detect harmful memes based on advanced reasoning over the interplay
+            of multimodal information in memes. Inspired by the success of Large Language Models
+            (LLMs) on complex reasoning, we first conduct abductive reasoning with LLMs. Then we
+            propose a novel generative framework to learn reasonable thoughts from LLMs for better
+            multimodal fusion and lightweight fine-tuning, which consists of two training stages: 1)
+            Distill multimodal reasoning knowledge from LLMs; and 2) Fine-tune the generative
+            framework to infer harmfulness. Extensive experiments conducted on three meme datasets
+            demonstrate that our proposed approach achieves superior performance than
+            state-of-the-art methods on the harmful meme detection task.</summary>
+        <category term="cs.CL" scheme="http://arxiv.org/schemas/atom" />
+        <published>2023-12-09T01:59:11Z</published>
+        <arxiv:comment>The first work to alleviate the issue of superficial understanding for
+            harmful meme detection by explicitly utilizing commonsense knowledge, from a fresh
+            perspective on harnessing advanced Large Language Models</arxiv:comment>
+        <arxiv:primary_category term="cs.CL" />
+        <arxiv:journal_ref>The 2023 Conference on Empirical Methods in Natural Language Processing</arxiv:journal_ref>
+        <author>
+            <name>Hongzhan Lin</name>
+        </author>
+        <author>
+            <name>Ziyang Luo</name>
+        </author>
+        <author>
+            <name>Jing Ma</name>
+        </author>
+        <author>
+            <name>Long Chen</name>
+        </author>
+    </entry>
+
+    <entry>
+        <id>http://arxiv.org/abs/2503.21676v2</id>
+        <title>How do language models learn facts? Dynamics, curricula and hallucinations</title>
+        <updated>2025-07-24T14:04:20Z</updated>
+        <link href="https://arxiv.org/abs/2503.21676v2" rel="alternate" type="text/html" />
+        <link href="https://arxiv.org/pdf/2503.21676v2" rel="related" type="application/pdf"
+            title="pdf" />
+        <summary>Large language models accumulate vast knowledge during pre-training, yet the
+            dynamics governing this acquisition remain poorly understood. This work investigates the
+            learning dynamics of language models on a synthetic factual recall task, uncovering
+            three key findings: First, language models learn in three phases, exhibiting a
+            performance plateau before acquiring precise factual knowledge. Mechanistically, this
+            plateau coincides with the formation of attention-based circuits that support recall.
+            Second, the training data distribution significantly impacts learning dynamics, as
+            imbalanced distributions lead to shorter plateaus. Finally, hallucinations emerge
+            simultaneously with knowledge, and integrating new knowledge into the model through
+            fine-tuning is challenging, as it quickly corrupts its existing parametric memories. Our
+            results emphasize the importance of data distribution in knowledge acquisition and
+            suggest novel data scheduling strategies to accelerate neural network training.</summary>
+        <category term="cs.CL" scheme="http://arxiv.org/schemas/atom" />
+        <category term="cs.LG" scheme="http://arxiv.org/schemas/atom" />
+        <published>2025-03-27T16:43:45Z</published>
+        <arxiv:comment>Accepted at the 2nd Conference on Language Modeling (2025)</arxiv:comment>
+        <arxiv:primary_category term="cs.CL" />
+        <arxiv:journal_ref>Conference on Language Modeling (2025)</arxiv:journal_ref>
+        <author>
+            <name>Nicolas Zucchet</name>
+        </author>
+        <author>
+            <name>Jörg Bornschein</name>
+        </author>
+        <author>
+            <name>Stephanie Chan</name>
+        </author>
+        <author>
+            <name>Andrew Lampinen</name>
+        </author>
+        <author>
+            <name>Razvan Pascanu</name>
+        </author>
+        <author>
+            <name>Soham De</name>
+        </author>
+    </entry>
+
+    <entry>
+        <id>http://arxiv.org/abs/2402.14679v2</id>
+        <title>Is Self-knowledge and Action Consistent or Not: Investigating Large Language Model's
+            Personality</title>
+        <updated>2024-12-10T11:26:52Z</updated>
+        <link href="https://arxiv.org/abs/2402.14679v2" rel="alternate" type="text/html" />
+        <link href="https://arxiv.org/pdf/2402.14679v2" rel="related" type="application/pdf"
+            title="pdf" />
+        <summary>In this study, we delve into the validity of conventional personality
+            questionnaires in capturing the human-like personality traits of Large Language Models
+            (LLMs). Our objective is to assess the congruence between the personality traits LLMs
+            claim to possess and their demonstrated tendencies in real-world scenarios. By
+            conducting an extensive examination of LLM outputs against observed human response
+            patterns, we aim to understand the disjunction between self-knowledge and action in
+            LLMs.</summary>
+        <category term="cs.CL" scheme="http://arxiv.org/schemas/atom" />
+        <category term="cs.CY" scheme="http://arxiv.org/schemas/atom" />
+        <published>2024-02-22T16:32:08Z</published>
+        <arxiv:comment>ICML 2024, Large Language Models and Cognition</arxiv:comment>
+        <arxiv:primary_category term="cs.CL" />
+        <author>
+            <name>Yiming Ai</name>
+        </author>
+        <author>
+            <name>Zhiwei He</name>
+        </author>
+        <author>
+            <name>Ziyin Zhang</name>
+        </author>
+        <author>
+            <name>Wenhong Zhu</name>
+        </author>
+        <author>
+            <name>Hongkun Hao</name>
+        </author>
+        <author>
+            <name>Kai Yu</name>
+        </author>
+        <author>
+            <name>Lingjun Chen</name>
+        </author>
+        <author>
+            <name>Rui Wang</name>
+        </author>
+    </entry>
+
+    <entry>
+        <id>http://arxiv.org/abs/2403.09676v1</id>
+        <title>Unmasking the Shadows of AI: Investigating Deceptive Capabilities in Large Language
+            Models</title>
+        <updated>2024-02-07T00:21:46Z</updated>
+        <link href="https://arxiv.org/abs/2403.09676v1" rel="alternate" type="text/html" />
+        <link href="https://arxiv.org/pdf/2403.09676v1" rel="related" type="application/pdf"
+            title="pdf" />
+        <summary>This research critically navigates the intricate landscape of AI deception,
+            concentrating on deceptive behaviours of Large Language Models (LLMs). My objective is
+            to elucidate this issue, examine the discourse surrounding it, and subsequently delve
+            into its categorization and ramifications. The essay initiates with an evaluation of the
+            AI Safety Summit 2023 (ASS) and introduction of LLMs, emphasising multidimensional
+            biases that underlie their deceptive behaviours.The literature review covers four types
+            of deception categorised: Strategic deception, Imitation, Sycophancy, and Unfaithful
+            Reasoning, along with the social implications and risks they entail. Lastly, I take an
+            evaluative stance on various aspects related to navigating the persistent challenges of
+            the deceptive AI. This encompasses considerations of international collaborative
+            governance, the reconfigured engagement of individuals with AI, proposal of practical
+            adjustments, and specific elements of digital education.</summary>
+        <category term="cs.CL" scheme="http://arxiv.org/schemas/atom" />
+        <category term="cs.AI" scheme="http://arxiv.org/schemas/atom" />
+        <published>2024-02-07T00:21:46Z</published>
+        <arxiv:comment>AI deception, Large Language Models, ChatGPT</arxiv:comment>
+        <arxiv:primary_category term="cs.CL" />
+        <author>
+            <name>Linge Guo</name>
+        </author>
+    </entry>
+
+    <entry>
+        <id>http://arxiv.org/abs/2402.11651v2</id>
+        <title>Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language
+            Models as Agents</title>
+        <updated>2024-04-16T11:41:13Z</updated>
+        <link href="https://arxiv.org/abs/2402.11651v2" rel="alternate" type="text/html" />
+        <link href="https://arxiv.org/pdf/2402.11651v2" rel="related" type="application/pdf"
+            title="pdf" />
+        <summary>Large language models (LLMs) have achieved success in acting as agents, which
+            interact with environments through tools such as search engines. However, LLMs are
+            optimized for language generation instead of tool use during training or alignment,
+            limiting their effectiveness as agents. To resolve this problem, previous work has first
+            collected interaction trajectories between LLMs and environments, using only
+            trajectories that successfully finished the task to fine-tune smaller models, making
+            fine-tuning data scarce and acquiring it both difficult and costly. Discarding failed
+            trajectories also leads to significant wastage of data and resources and limits the
+            possible optimization paths during fine-tuning. In this paper, we argue that
+            unsuccessful trajectories offer valuable insights, and LLMs can learn from these
+            trajectories through appropriate quality control and fine-tuning strategies. By simply
+            adding a prefix or suffix that tells the model whether to generate a successful
+            trajectory during training, we improve model performance by a large margin on
+            mathematical reasoning, multi-hop question answering, and strategic question answering
+            tasks. We further analyze the inference results and find that our method provides a
+            better trade-off between valuable information and errors in unsuccessful trajectories.
+            To our knowledge, we are the first to demonstrate the value of negative trajectories and
+            their application in agent-tunning scenarios. Our findings offer guidance for developing
+            better agent-tuning methods and low-resource data usage techniques.</summary>
+        <category term="cs.CL" scheme="http://arxiv.org/schemas/atom" />
+        <published>2024-02-18T17:10:07Z</published>
+        <arxiv:comment>Agent, LLM, Large Language Model</arxiv:comment>
+        <arxiv:primary_category term="cs.CL" />
+        <author>
+            <name>Renxi Wang</name>
+        </author>
+        <author>
+            <name>Haonan Li</name>
+        </author>
+        <author>
+            <name>Xudong Han</name>
+        </author>
+        <author>
+            <name>Yixuan Zhang</name>
+        </author>
+        <author>
+            <name>Timothy Baldwin</name>
+        </author>
+    </entry>
+
+    <entry>
+        <id>http://arxiv.org/abs/1610.00031v1</id>
+        <title>Discriminating Similar Languages: Evaluations and Explorations</title>
+        <updated>2016-09-30T20:57:52Z</updated>
+        <link href="https://arxiv.org/abs/1610.00031v1" rel="alternate" type="text/html" />
+        <link href="https://arxiv.org/pdf/1610.00031v1" rel="related" type="application/pdf"
+            title="pdf" />
+        <summary>We present an analysis of the performance of machine learning classifiers on
+            discriminating between similar languages and language varieties. We carried out a number
+            of experiments using the results of the two editions of the Discriminating between
+            Similar Languages (DSL) shared task. We investigate the progress made between the two
+            tasks, estimate an upper bound on possible performance using ensemble and oracle
+            combination, and provide learning curves to help us understand which languages are more
+            challenging. A number of difficult sentences are identified and investigated further
+            with human annotation.</summary>
+        <category term="cs.CL" scheme="http://arxiv.org/schemas/atom" />
+        <published>2016-09-30T20:57:52Z</published>
+        <arxiv:comment>Proceedings of Language Resources and Evaluation (LREC)</arxiv:comment>
+        <arxiv:primary_category term="cs.CL" />
+        <arxiv:journal_ref>Proceedings of Language Resources and Evaluation (LREC). Portoroz,
+            Slovenia. pp 1800-1807 (2016)</arxiv:journal_ref>
+        <author>
+            <name>Cyril Goutte</name>
+        </author>
+        <author>
+            <name>Serge Léger</name>
+        </author>
+        <author>
+            <name>Shervin Malmasi</name>
+        </author>
+        <author>
+            <name>Marcos Zampieri</name>
+        </author>
+    </entry>
+
+    <entry>
+        <id>http://arxiv.org/abs/2312.10793v3</id>
+        <title>Demystifying Instruction Mixing for Fine-tuning Large Language Models</title>
+        <updated>2024-02-18T17:13:36Z</updated>
+        <link href="https://arxiv.org/abs/2312.10793v3" rel="alternate" type="text/html" />
+        <link href="https://arxiv.org/pdf/2312.10793v3" rel="related" type="application/pdf"
+            title="pdf" />
+        <summary>Instruction tuning significantly enhances the performance of large language models
+            (LLMs) across various tasks. However, the procedure to optimizing the mixing of
+            instruction datasets for LLM fine-tuning is still poorly understood. This study
+            categorizes instructions into three primary types: NLP downstream tasks, coding, and
+            general chat. We explore the effects of instruction tuning on different combinations of
+            datasets on LLM performance, and find that certain instruction types are more
+            advantageous for specific applications but can negatively impact other areas. This work
+            provides insights into instruction mixtures, laying the foundations for future research.</summary>
+        <category term="cs.CL" scheme="http://arxiv.org/schemas/atom" />
+        <category term="cs.AI" scheme="http://arxiv.org/schemas/atom" />
+        <published>2023-12-17T18:44:26Z</published>
+        <arxiv:comment>Instruction Tuning, Large Language Model, Alignment</arxiv:comment>
+        <arxiv:primary_category term="cs.CL" />
+        <author>
+            <name>Renxi Wang</name>
+        </author>
+        <author>
+            <name>Haonan Li</name>
+        </author>
+        <author>
+            <name>Minghao Wu</name>
+        </author>
+        <author>
+            <name>Yuxia Wang</name>
+        </author>
+        <author>
+            <name>Xudong Han</name>
+        </author>
+        <author>
+            <name>Chiyu Zhang</name>
+        </author>
+        <author>
+            <name>Timothy Baldwin</name>
+        </author>
+    </entry>
+
+    <entry>
+        <id>http://arxiv.org/abs/2512.08480v1</id>
+        <title>Soft Inductive Bias Approach via Explicit Reasoning Perspectives in Inappropriate
+            Utterance Detection Using Large Language Models</title>
+        <updated>2025-12-09T10:55:33Z</updated>
+        <link href="https://arxiv.org/abs/2512.08480v1" rel="alternate" type="text/html" />
+        <link href="https://arxiv.org/pdf/2512.08480v1" rel="related" type="application/pdf"
+            title="pdf" />
+        <summary>Recent incidents in certain online games and communities, where anonymity is
+            guaranteed, show that unchecked inappropriate remarks frequently escalate into verbal
+            abuse and even criminal behavior, raising significant social concerns. Consequently,
+            there is a growing need for research on techniques that can detect inappropriate
+            utterances within conversational texts to help build a safer communication environment.
+            Although large-scale language models trained on Korean corpora and chain-of-thought
+            reasoning have recently gained attention, research applying these approaches to
+            inappropriate utterance detection remains limited. In this study, we propose a soft
+            inductive bias approach that explicitly defines reasoning perspectives to guide the
+            inference process, thereby promoting rational decision-making and preventing errors that
+            may arise during reasoning. We fine-tune a Korean large language model using the
+            proposed method and conduct both quantitative performance comparisons and qualitative
+            evaluations across different training strategies. Experimental results show that the
+            Kanana-1.5 model achieves an average accuracy of 87.0046, improving by approximately
+            3.89 percent over standard supervised learning. These findings indicate that the
+            proposed method goes beyond simple knowledge imitation by large language models and
+            enables more precise and consistent judgments through constrained reasoning
+            perspectives, demonstrating its effectiveness for inappropriate utterance detection.</summary>
+        <category term="cs.CL" scheme="http://arxiv.org/schemas/atom" />
+        <published>2025-12-09T10:55:33Z</published>
+        <arxiv:comment>in Korean language, Published in the Proceedings of the 37th Annual
+            Conference on Human and Language Technology, 2025, pp. 714-719. (English translation
+            assisted by GPT)</arxiv:comment>
+        <arxiv:primary_category term="cs.CL" />
+        <arxiv:journal_ref>Proceedings of the 37th Annual Conference on Human and Language
+            Technology, 2025, pp. 714-719</arxiv:journal_ref>
+        <author>
+            <name>Ju-Young Kim</name>
+        </author>
+        <author>
+            <name>Ji-Hong Park</name>
+        </author>
+        <author>
+            <name>Se-Yeon Lee</name>
+        </author>
+        <author>
+            <name>Sujin Park</name>
+        </author>
+        <author>
+            <name>Gun-Woo Kim</name>
+        </author>
+    </entry>
+</feed>
